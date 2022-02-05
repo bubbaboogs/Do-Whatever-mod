@@ -27,7 +27,7 @@ public class ManaBerryItem extends Item {
 
 	@Override
 	public int getUseDuration(ItemStack stack) {
-		return 10;
+		return 1;
 	}
 
 	@Override
