@@ -114,7 +114,7 @@ public class RandomStuffExpansionModVariables {
 	public static class PlayerVariables {
 		public boolean ManaStart = false;
 		public double MaxMana = 100.0;
-		public double ManaMultiplier = 0;
+		public double ManaMultiplier = 0.0;
 		public double Mana = 100.0;
 
 		public void syncPlayerVariables(Entity entity) {

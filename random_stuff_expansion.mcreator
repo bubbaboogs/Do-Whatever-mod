@@ -122,7 +122,7 @@
       "name": "ManaMultiplier",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "Mana",
