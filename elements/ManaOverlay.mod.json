@@ -1,0 +1,57 @@
+{
+  "_fv": 24,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:Mana>",
+          "color": {
+            "value": -16777012,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:Mana>",
+          "x": 1,
+          "y": 211
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:MaxMana>",
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:MaxMana>",
+          "x": 0,
+          "y": 224
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/",
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "name": "/",
+          "x": 100,
+          "y": 212
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
