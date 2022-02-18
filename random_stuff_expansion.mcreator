@@ -111,6 +111,149 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "mana_berry_bush"
+    },
+    {
+      "name": "StoneArmorHelmetTickEvent",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_armor_helmet_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StoneArmor",
+      "type": "armor",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "BloodWand",
+      "type": "rangeditem",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_wand",
+      "path": "~/Mana"
+    },
+    {
+      "name": "DriedBloodItemIsDroppedByPlayer",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_blood_item_is_dropped_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mana"
+    },
+    {
+      "name": "DriedBlood",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dried_blood",
+      "path": "~/Mana"
+    },
+    {
+      "name": "SacrificialKnifeRightClickedInAir",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sacrificial_knife_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mana"
+    },
+    {
+      "name": "SacrificialKnife",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sacrificial_knife",
+      "path": "~/Mana"
+    },
+    {
+      "name": "BloodWandRangedItemUsed",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_wand_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -142,9 +285,16 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.random_stuff_expansion.stone_armor_helmet": "Stone Helmet",
+      "item.random_stuff_expansion.sacrificial_knife": "Sacrificial Knife",
+      "item.random_stuff_expansion.stone_armor_boots": "Stone Boots",
+      "item.random_stuff_expansion.stone_armor_chestplate": "Stone Chestplate",
+      "item.random_stuff_expansion.blood_wand": "Blood Wand",
       "item.random_stuff_expansion.mana_berry": "Mana Berry",
       "block.random_stuff_expansion.mana_berry_bush": "Mana Berry Bush",
-      "item.random_stuff_expansion.magic": "Magic Wand"
+      "item.random_stuff_expansion.stone_armor_leggings": "Stone Leggings",
+      "item.random_stuff_expansion.magic": "Magic Wand",
+      "item.random_stuff_expansion.dried_blood": "Dried Blood"
     }
   },
   "foldersRoot": {
