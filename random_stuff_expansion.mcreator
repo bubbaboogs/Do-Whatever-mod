@@ -254,6 +254,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "SacrificialKnifeRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sacrificial_knife_recipe",
+      "path": "~/Mana"
     }
   ],
   "variable_elements": [
