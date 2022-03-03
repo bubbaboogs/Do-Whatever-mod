@@ -1,8 +1,6 @@
 
 package net.mcreator.randomstuffexpansion.world.biome;
 
-import net.minecraftforge.common.BiomeManager;
-
 import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilderBaseConfiguration;
 import net.minecraft.world.level.levelgen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.level.levelgen.surfacebuilders.ConfiguredSurfaceBuilder;
@@ -22,18 +20,18 @@ import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.entity.MobCategory;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.StructureFeatures;
 import net.minecraft.data.worldgen.Features;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.Registry;
 
+import net.mcreator.randomstuffexpansion.init.RandomStuffExpansionModEntities;
 import net.mcreator.randomstuffexpansion.init.RandomStuffExpansionModBlocks;
-import net.mcreator.randomstuffexpansion.init.RandomStuffExpansionModBiomes;
 import net.mcreator.randomstuffexpansion.RandomStuffExpansionMod;
 
 import java.util.Map;
@@ -68,6 +66,7 @@ public class DarkForestBiome {
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder().setPlayerCanSpawn();
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(RandomStuffExpansionModEntities.SOUL_WARDEN, 20, 1, 4));
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.NONE).depth(0.1f).scale(0.2f)
 				.temperature(0.5f).downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build())
 				.generationSettings(biomeGenerationSettings.build()).build();
@@ -78,8 +77,6 @@ public class DarkForestBiome {
 				SURFACE_BUILDER);
 		CONFIGURED_FEATURES.forEach((resourceLocation, configuredFeature) -> Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, resourceLocation,
 				configuredFeature));
-		BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(
-				ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(RandomStuffExpansionModBiomes.DARK_FOREST)), 10));
 	}
 
 	private static final Map<ResourceLocation, ConfiguredFeature<?, ?>> CONFIGURED_FEATURES = new HashMap<>();

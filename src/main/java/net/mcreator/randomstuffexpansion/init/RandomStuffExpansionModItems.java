@@ -9,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
@@ -49,6 +50,9 @@ public class RandomStuffExpansionModItems {
 	public static final Item DARK_PRESSURE_PLATE = register(RandomStuffExpansionModBlocks.DARK_PRESSURE_PLATE, CreativeModeTab.TAB_REDSTONE);
 	public static final Item DARK_BUTTON = register(RandomStuffExpansionModBlocks.DARK_BUTTON, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final Item DREAM_CATCHER = register(new DreamCatcherItem());
+	public static final Item SOUL_WARDEN = register(
+			new SpawnEggItem(RandomStuffExpansionModEntities.SOUL_WARDEN, -16777216, -16711732, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
+					.setRegistryName("soul_warden_spawn_egg"));
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

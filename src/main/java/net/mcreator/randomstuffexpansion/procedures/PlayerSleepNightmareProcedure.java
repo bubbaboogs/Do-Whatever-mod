@@ -40,12 +40,12 @@ public class PlayerSleepNightmareProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (Math.random() == 0.1) {
+		if (Math.random() > 0.5) {
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(RandomStuffExpansionModItems.DREAM_CATCHER))
 					: false) {
 				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(new TextComponent("You feel your dream catcher vibrate..."), (true));
+					_player.displayClientMessage(new TextComponent("You feel your dream catcher vibrate..."), (false));
 			} else {
 				if (entity instanceof ServerPlayer _player && !_player.level.isClientSide()) {
 					ResourceKey<Level> destinationType = ResourceKey.create(Registry.DIMENSION_REGISTRY,

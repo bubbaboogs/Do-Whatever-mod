@@ -14,6 +14,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.randomstuffexpansion.entity.SoulWardenEntity;
 import net.mcreator.randomstuffexpansion.entity.BloodWandEntity;
 
 import java.util.List;
@@ -25,6 +26,9 @@ public class RandomStuffExpansionModEntities {
 	public static final EntityType<BloodWandEntity> BLOOD_WAND = register("entitybulletblood_wand",
 			EntityType.Builder.<BloodWandEntity>of(BloodWandEntity::new, MobCategory.MISC).setCustomClientFactory(BloodWandEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final EntityType<SoulWardenEntity> SOUL_WARDEN = register("soul_warden",
+			EntityType.Builder.<SoulWardenEntity>of(SoulWardenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SoulWardenEntity::new).sized(0.6f, 1.8f));
 
 	private static <T extends Entity> EntityType<T> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		EntityType<T> entityType = (EntityType<T>) entityTypeBuilder.build(registryname).setRegistryName(registryname);
@@ -40,10 +44,12 @@ public class RandomStuffExpansionModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
+			SoulWardenEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
+		event.put(SOUL_WARDEN, SoulWardenEntity.createAttributes().build());
 	}
 }
