@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "random_stuff_expansion:dark_log"
+    },
+    "1": {
+      "item": "random_stuff_expansion:dark_log"
+    },
+    "2": {
+      "item": "random_stuff_expansion:dark_log"
+    },
+    "3": {
+      "item": "random_stuff_expansion:dark_log"
+    }
+  },
+  "result": {
+    "item": "random_stuff_expansion:dark_wood",
+    "count": 3
+  }
+}

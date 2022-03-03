@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "random_stuff_expansion:dark_planks"
+    },
+    "3": {
+      "item": "random_stuff_expansion:dark_planks"
+    },
+    "4": {
+      "item": "random_stuff_expansion:dark_planks"
+    },
+    "6": {
+      "item": "random_stuff_expansion:dark_planks"
+    },
+    "7": {
+      "item": "random_stuff_expansion:dark_planks"
+    },
+    "8": {
+      "item": "random_stuff_expansion:dark_planks"
+    }
+  },
+  "result": {
+    "item": "random_stuff_expansion:dark_stairs",
+    "count": 4
+  }
+}

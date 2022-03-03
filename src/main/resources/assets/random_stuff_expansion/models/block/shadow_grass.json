@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "random_stuff_expansion:blocks/shadowgrassbottom",
+    "up": "random_stuff_expansion:blocks/shadowgrasstop",
+    "north": "random_stuff_expansion:blocks/shadowgrassside2",
+    "east": "random_stuff_expansion:blocks/shadowgrassside2",
+    "south": "random_stuff_expansion:blocks/shadowgrassside2",
+    "west": "random_stuff_expansion:blocks/shadowgrassside2",
+    "particle": "random_stuff_expansion:blocks/shadowgrassbottom"
+  }
+}

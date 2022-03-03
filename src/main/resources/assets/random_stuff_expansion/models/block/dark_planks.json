@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "random_stuff_expansion:blocks/dark_planks",
+    "particle": "random_stuff_expansion:blocks/dark_planks"
+  }
+}

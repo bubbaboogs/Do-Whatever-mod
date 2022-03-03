@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "random_stuff_expansion:blocks/dark_planks",
+    "particle": "random_stuff_expansion:blocks/dark_planks"
+  }
+}

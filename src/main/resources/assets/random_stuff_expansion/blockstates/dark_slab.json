@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "random_stuff_expansion:block/dark_slab"
+    },
+    "type=top": {
+      "model": "random_stuff_expansion:block/dark_slab_top"
+    },
+    "type=double": {
+      "model": "random_stuff_expansion:block/dark_slab_full"
+    }
+  }
+}

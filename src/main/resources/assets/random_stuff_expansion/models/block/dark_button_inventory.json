@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "random_stuff_expansion:blocks/dark_planks"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "random_stuff_expansion:blocks/dark_log_top",
+    "up": "random_stuff_expansion:blocks/dark_log_top",
+    "north": "random_stuff_expansion:blocks/dark_log_side",
+    "east": "random_stuff_expansion:blocks/dark_log_side",
+    "south": "random_stuff_expansion:blocks/dark_log_side",
+    "west": "random_stuff_expansion:blocks/dark_log_side",
+    "particle": "random_stuff_expansion:blocks/dark_log_top"
+  }
+}

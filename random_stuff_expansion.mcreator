@@ -263,6 +263,233 @@
       "locked_code": false,
       "registry_name": "sacrificial_knife_recipe",
       "path": "~/Mana"
+    },
+    {
+      "name": "ShadowGrass",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_grass"
+    },
+    {
+      "name": "DarkLog",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_log"
+    },
+    {
+      "name": "DarkWood",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood"
+    },
+    {
+      "name": "DarkPlanks",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_planks"
+    },
+    {
+      "name": "DarkLeaves",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_leaves"
+    },
+    {
+      "name": "DarkStairs",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_stairs"
+    },
+    {
+      "name": "DarkSlab",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_slab"
+    },
+    {
+      "name": "DarkFence",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_fence"
+    },
+    {
+      "name": "DarkFenceGate",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_fence_gate"
+    },
+    {
+      "name": "DarkPressurePlate",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_pressure_plate"
+    },
+    {
+      "name": "DarkButton",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_button"
+    },
+    {
+      "name": "DarkItemsTag",
+      "type": "tag",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_items_tag"
+    },
+    {
+      "name": "DarkWoodRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_wood_recipe"
+    },
+    {
+      "name": "DarkPlanksRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_planks_recipe"
+    },
+    {
+      "name": "DarkStairsRecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_stairs_recipe"
+    },
+    {
+      "name": "DarkSlabRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_slab_recipe"
+    },
+    {
+      "name": "DarkFenceRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_fence_recipe"
+    },
+    {
+      "name": "DarkFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_fence_gate_recipe"
+    },
+    {
+      "name": "DarkPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_pressure_plate_recipe"
+    },
+    {
+      "name": "DarkButtonRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_button_recipe"
+    },
+    {
+      "name": "DarkStickRecipe",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_stick_recipe"
+    },
+    {
+      "name": "DarkForest",
+      "type": "biome",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_forest"
+    },
+    {
+      "name": "ShadowRealmPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_realm_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShadowRealm",
+      "type": "dimension",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadow_realm",
+      "metadata": {
+        "ep": false
+      }
+    },
+    {
+      "name": "PlayerSleepNightmare",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_sleep_nightmare",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DreamCatcher",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dream_catcher"
     }
   ],
   "variable_elements": [
@@ -294,16 +521,30 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.random_stuff_expansion.stone_armor_helmet": "Stone Helmet",
       "item.random_stuff_expansion.sacrificial_knife": "Sacrificial Knife",
+      "block.random_stuff_expansion.dark_wood": "Dark Wood",
+      "block.random_stuff_expansion.dark_leaves": "Dark Leaves",
+      "block.random_stuff_expansion.dark_planks": "Dark Planks",
+      "block.random_stuff_expansion.dark_fence": "Dark Fence",
+      "block.random_stuff_expansion.dark_log": "Dark Log",
+      "block.random_stuff_expansion.dark_slab": "Dark Slab",
+      "block.random_stuff_expansion.dark_fence_gate": "Dark Fence Gate",
       "item.random_stuff_expansion.stone_armor_boots": "Stone Boots",
-      "item.random_stuff_expansion.stone_armor_chestplate": "Stone Chestplate",
       "item.random_stuff_expansion.blood_wand": "Blood Wand",
+      "block.random_stuff_expansion.dark_button": "Dark Button",
       "item.random_stuff_expansion.mana_berry": "Mana Berry",
+      "item.random_stuff_expansion.dried_blood": "Dried Blood",
+      "item.random_stuff_expansion.stone_armor_helmet": "Stone Helmet",
+      "biome.random_stuff_expansion.dark_forest": "Dark Forest",
+      "item.random_stuff_expansion.dream_catcher": "Dream Catcher",
+      "block.random_stuff_expansion.dark_stairs": "Dark Stairs",
+      "block.random_stuff_expansion.shadow_grass": "Shadow Grass",
+      "item.random_stuff_expansion.stone_armor_chestplate": "Stone Chestplate",
+      "item.random_stuff_expansion.shadow_realm": "Shadow Realm Portal Igniter",
       "block.random_stuff_expansion.mana_berry_bush": "Mana Berry Bush",
-      "item.random_stuff_expansion.stone_armor_leggings": "Stone Leggings",
       "item.random_stuff_expansion.magic": "Magic Wand",
-      "item.random_stuff_expansion.dried_blood": "Dried Blood"
+      "block.random_stuff_expansion.dark_pressure_plate": "Dark Pressure Plate",
+      "item.random_stuff_expansion.stone_armor_leggings": "Stone Leggings"
     }
   },
   "foldersRoot": {

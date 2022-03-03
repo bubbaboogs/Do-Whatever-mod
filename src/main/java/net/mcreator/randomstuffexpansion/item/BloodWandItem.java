@@ -19,7 +19,7 @@ import net.mcreator.randomstuffexpansion.entity.BloodWandEntity;
 
 public class BloodWandItem extends Item {
 	public BloodWandItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(100));
+		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).stacksTo(1));
 		setRegistryName("blood_wand");
 	}
 

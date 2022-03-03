@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:dark_log"
+    }
+  ],
+  "result": {
+    "item": "random_stuff_expansion:dark_planks",
+    "count": 4
+  }
+}

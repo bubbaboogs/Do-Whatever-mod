@@ -1,0 +1,6 @@
+{
+  "parent": "block/pressure_plate_down",
+  "textures": {
+    "texture": "random_stuff_expansion:blocks/dark_planks"
+  }
+}
