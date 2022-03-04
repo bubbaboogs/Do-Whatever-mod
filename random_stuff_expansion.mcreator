@@ -514,6 +514,166 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul_warden"
+    },
+    {
+      "name": "Mystic",
+      "type": "item",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic"
+    },
+    {
+      "name": "MysticOre",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_ore"
+    },
+    {
+      "name": "MysticBlock",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_block"
+    },
+    {
+      "name": "MysticOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_ore_block_recipe"
+    },
+    {
+      "name": "MysticBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_block_ore_recipe"
+    },
+    {
+      "name": "MysticOreSmelting",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_ore_smelting"
+    },
+    {
+      "name": "MysticalPickaxe",
+      "type": "tool",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_pickaxe"
+    },
+    {
+      "name": "MysticalAxe",
+      "type": "tool",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_axe"
+    },
+    {
+      "name": "MysticalSword",
+      "type": "tool",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_sword"
+    },
+    {
+      "name": "MysticalShovel",
+      "type": "tool",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_shovel"
+    },
+    {
+      "name": "MysticalHoe",
+      "type": "tool",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_hoe"
+    },
+    {
+      "name": "MysticalPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_pickaxe_recipe"
+    },
+    {
+      "name": "MysticalAxeRecipe",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_axe_recipe"
+    },
+    {
+      "name": "MysticalSwordRecipe",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_sword_recipe"
+    },
+    {
+      "name": "MysticalShovelRecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_shovel_recipe"
+    },
+    {
+      "name": "MysticalHoeRecipe",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_hoe_recipe"
+    },
+    {
+      "name": "SoulVines",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_vines"
+    },
+    {
+      "name": "SoulVinesUpdateTick",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_vines_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -552,12 +712,18 @@
       "block.random_stuff_expansion.dark_fence": "Dark Fence",
       "block.random_stuff_expansion.dark_log": "Dark Log",
       "block.random_stuff_expansion.dark_slab": "Dark Slab",
+      "item.random_stuff_expansion.mystic": "Mystic",
+      "block.random_stuff_expansion.mystic_ore": "Mystic Ore",
+      "item.random_stuff_expansion.mystical_axe": "Mystical Axe",
+      "item.random_stuff_expansion.mystical_pickaxe": "Mystical Pickaxe",
       "block.random_stuff_expansion.dark_fence_gate": "Dark Fence Gate",
       "item.random_stuff_expansion.stone_armor_boots": "Stone Boots",
       "item.random_stuff_expansion.blood_wand": "Blood Wand",
       "block.random_stuff_expansion.dark_button": "Dark Button",
       "item.random_stuff_expansion.mana_berry": "Mana Berry",
+      "item.random_stuff_expansion.mystical_sword": "Mystical Sword",
       "item.random_stuff_expansion.dried_blood": "Dried Blood",
+      "item.random_stuff_expansion.mystical_hoe": "Mystical Hoe",
       "item.random_stuff_expansion.stone_armor_helmet": "Stone Helmet",
       "biome.random_stuff_expansion.dark_forest": "Dark Forest",
       "item.random_stuff_expansion.dream_catcher": "Dream Catcher",
@@ -568,9 +734,12 @@
       "item.random_stuff_expansion.soul_warden_spawn_egg": "Soul Warden Spawn Egg",
       "block.random_stuff_expansion.mana_berry_bush": "Mana Berry Bush",
       "entity.random_stuff_expansion.soul_warden": "Soul Warden",
+      "item.random_stuff_expansion.mystical_shovel": "Mystical Shovel",
       "item.random_stuff_expansion.magic": "Magic Wand",
       "block.random_stuff_expansion.dark_pressure_plate": "Dark Pressure Plate",
-      "item.random_stuff_expansion.stone_armor_leggings": "Stone Leggings"
+      "item.random_stuff_expansion.stone_armor_leggings": "Stone Leggings",
+      "block.random_stuff_expansion.mystic_block": "Block of Mystic",
+      "block.random_stuff_expansion.soul_vines": "Soul Vines"
     }
   },
   "foldersRoot": {

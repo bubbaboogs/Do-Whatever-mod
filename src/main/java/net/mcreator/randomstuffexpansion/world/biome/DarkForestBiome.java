@@ -46,6 +46,7 @@ public class DarkForestBiome {
 				.skyColor(-15263977).foliageColorOverride(-11908534).grassColorOverride(-15987700).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder().surfaceBuilder(SURFACE_BUILDER);
 		biomeGenerationSettings.addStructureStart(StructureFeatures.BURIED_TREASURE);
+		biomeGenerationSettings.addStructureStart(StructureFeatures.NETHER_FOSSIL);
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, register("trees", Feature.TREE
 				.configured((new TreeConfiguration.TreeConfigurationBuilder(
 						new SimpleStateProvider(RandomStuffExpansionModBlocks.DARK_LOG.defaultBlockState()), new GiantTrunkPlacer(7, 2, 14),

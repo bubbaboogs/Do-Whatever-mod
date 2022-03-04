@@ -17,6 +17,7 @@ import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.Registry;
 
 import net.mcreator.randomstuffexpansion.world.features.plants.ManaBerryBushFeature;
+import net.mcreator.randomstuffexpansion.world.features.ores.MysticOreFeature;
 
 import java.util.Set;
 import java.util.Map;
@@ -28,6 +29,8 @@ public class RandomStuffExpansionModFeatures {
 	static {
 		REGISTRY.put(ManaBerryBushFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
 				ManaBerryBushFeature.GENERATE_BIOMES, ManaBerryBushFeature.CONFIGURED_FEATURE));
+		REGISTRY.put(MysticOreFeature.FEATURE, new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, MysticOreFeature.GENERATE_BIOMES,
+				MysticOreFeature.CONFIGURED_FEATURE));
 	}
 
 	@SubscribeEvent

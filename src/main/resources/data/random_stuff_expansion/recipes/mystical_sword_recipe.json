@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "random_stuff_expansion:mystic"
+    },
+    "1": {
+      "item": "random_stuff_expansion:mystic"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "random_stuff_expansion:mystical_sword",
+    "count": 1
+  }
+}

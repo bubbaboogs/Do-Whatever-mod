@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "random_stuff_expansion:mystic"
+    },
+    "1": {
+      "item": "random_stuff_expansion:mystic"
+    },
+    "2": {
+      "item": "random_stuff_expansion:mystic"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "random_stuff_expansion:mystical_pickaxe",
+    "count": 1
+  }
+}

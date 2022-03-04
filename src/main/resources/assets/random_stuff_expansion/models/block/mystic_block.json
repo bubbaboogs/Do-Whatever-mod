@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "random_stuff_expansion:blocks/mystic_ore_block",
+    "particle": "random_stuff_expansion:blocks/mystic_ore_block"
+  }
+}

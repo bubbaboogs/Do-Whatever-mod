@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "random_stuff_expansion:blocks/soulvine",
+    "particle": "random_stuff_expansion:blocks/soulvine"
+  }
+}

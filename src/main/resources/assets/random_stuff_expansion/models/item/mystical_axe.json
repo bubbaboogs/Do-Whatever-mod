@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "random_stuff_expansion:items/mystical_axe"
+  }
+}

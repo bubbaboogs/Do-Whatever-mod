@@ -16,6 +16,12 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.randomstuffexpansion.item.StoneArmorItem;
 import net.mcreator.randomstuffexpansion.item.SacrificialKnifeItem;
+import net.mcreator.randomstuffexpansion.item.MysticalSwordItem;
+import net.mcreator.randomstuffexpansion.item.MysticalShovelItem;
+import net.mcreator.randomstuffexpansion.item.MysticalPickaxeItem;
+import net.mcreator.randomstuffexpansion.item.MysticalHoeItem;
+import net.mcreator.randomstuffexpansion.item.MysticalAxeItem;
+import net.mcreator.randomstuffexpansion.item.MysticItem;
 import net.mcreator.randomstuffexpansion.item.ManaBerryItem;
 import net.mcreator.randomstuffexpansion.item.MagicItem;
 import net.mcreator.randomstuffexpansion.item.DriedBloodItem;
@@ -53,6 +59,15 @@ public class RandomStuffExpansionModItems {
 	public static final Item SOUL_WARDEN = register(
 			new SpawnEggItem(RandomStuffExpansionModEntities.SOUL_WARDEN, -16777216, -16711732, new Item.Properties().tab(CreativeModeTab.TAB_MISC))
 					.setRegistryName("soul_warden_spawn_egg"));
+	public static final Item MYSTIC = register(new MysticItem());
+	public static final Item MYSTIC_ORE = register(RandomStuffExpansionModBlocks.MYSTIC_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item MYSTIC_BLOCK = register(RandomStuffExpansionModBlocks.MYSTIC_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final Item MYSTICAL_PICKAXE = register(new MysticalPickaxeItem());
+	public static final Item MYSTICAL_AXE = register(new MysticalAxeItem());
+	public static final Item MYSTICAL_SWORD = register(new MysticalSwordItem());
+	public static final Item MYSTICAL_SHOVEL = register(new MysticalShovelItem());
+	public static final Item MYSTICAL_HOE = register(new MysticalHoeItem());
+	public static final Item SOUL_VINES = register(RandomStuffExpansionModBlocks.SOUL_VINES, CreativeModeTab.TAB_DECORATIONS);
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);

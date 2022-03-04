@@ -12,7 +12,10 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.randomstuffexpansion.block.SoulVinesBlock;
 import net.mcreator.randomstuffexpansion.block.ShadowGrassBlock;
+import net.mcreator.randomstuffexpansion.block.MysticOreBlock;
+import net.mcreator.randomstuffexpansion.block.MysticBlockBlock;
 import net.mcreator.randomstuffexpansion.block.ManaBerryBushBlock;
 import net.mcreator.randomstuffexpansion.block.DarkWoodBlock;
 import net.mcreator.randomstuffexpansion.block.DarkStairsBlock;
@@ -43,6 +46,9 @@ public class RandomStuffExpansionModBlocks {
 	public static final Block DARK_FENCE_GATE = register(new DarkFenceGateBlock());
 	public static final Block DARK_PRESSURE_PLATE = register(new DarkPressurePlateBlock());
 	public static final Block DARK_BUTTON = register(new DarkButtonBlock());
+	public static final Block MYSTIC_ORE = register(new MysticOreBlock());
+	public static final Block MYSTIC_BLOCK = register(new MysticBlockBlock());
+	public static final Block SOUL_VINES = register(new SoulVinesBlock());
 
 	private static Block register(Block block) {
 		REGISTRY.add(block);
@@ -59,6 +65,7 @@ public class RandomStuffExpansionModBlocks {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
 			ManaBerryBushBlock.registerRenderLayer();
+			SoulVinesBlock.registerRenderLayer();
 		}
 	}
 }

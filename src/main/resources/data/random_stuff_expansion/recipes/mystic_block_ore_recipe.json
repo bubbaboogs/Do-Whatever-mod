@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "random_stuff_expansion:mystic_block"
+    }
+  ],
+  "result": {
+    "item": "random_stuff_expansion:mystic",
+    "count": 9
+  }
+}
