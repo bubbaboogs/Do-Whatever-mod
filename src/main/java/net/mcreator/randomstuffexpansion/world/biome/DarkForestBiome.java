@@ -30,6 +30,8 @@ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.core.Registry;
 
+import net.mcreator.randomstuffexpansion.world.features.treedecorators.DarkForestTrunkDecorator;
+import net.mcreator.randomstuffexpansion.world.features.treedecorators.DarkForestLeaveDecorator;
 import net.mcreator.randomstuffexpansion.init.RandomStuffExpansionModEntities;
 import net.mcreator.randomstuffexpansion.init.RandomStuffExpansionModBlocks;
 import net.mcreator.randomstuffexpansion.RandomStuffExpansionMod;
@@ -37,9 +39,12 @@ import net.mcreator.randomstuffexpansion.RandomStuffExpansionMod;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.google.common.collect.ImmutableList;
+
 public class DarkForestBiome {
-	private static final ConfiguredSurfaceBuilder<?> SURFACE_BUILDER = SurfaceBuilder.DEFAULT.configured(new SurfaceBuilderBaseConfiguration(
-			RandomStuffExpansionModBlocks.SHADOW_GRASS.defaultBlockState(), Blocks.STONE.defaultBlockState(), Blocks.STONE.defaultBlockState()));
+	private static final ConfiguredSurfaceBuilder<?> SURFACE_BUILDER = SurfaceBuilder.DEFAULT
+			.configured(new SurfaceBuilderBaseConfiguration(RandomStuffExpansionModBlocks.SHADOW_GRASS.defaultBlockState(),
+					Blocks.BLACKSTONE.defaultBlockState(), Blocks.BLACKSTONE.defaultBlockState()));
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-15263977).waterColor(-16777216).waterFogColor(-15263977)
@@ -53,7 +58,7 @@ public class DarkForestBiome {
 						new SimpleStateProvider(RandomStuffExpansionModBlocks.DARK_LEAVES.defaultBlockState()),
 						new SimpleStateProvider(Blocks.SPRUCE_SAPLING.defaultBlockState()),
 						new MegaPineFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0), UniformInt.of(3, 4)), new TwoLayersFeatureSize(1, 1, 2)))
-								.build())
+								.decorators(ImmutableList.of(DarkForestLeaveDecorator.INSTANCE, DarkForestTrunkDecorator.INSTANCE)).build())
 				.decorated(Features.Decorators.HEIGHTMAP_SQUARE)
 				.decorated(FeatureDecorator.COUNT_EXTRA.configured(new FrequencyWithExtraChanceDecoratorConfiguration(1, 0.1F, 1)))));
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,

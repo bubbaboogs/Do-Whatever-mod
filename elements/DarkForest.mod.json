@@ -7,7 +7,7 @@
       "value": "CUSTOM:ShadowGrass"
     },
     "undergroundBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "Blocks.BLACKSTONE"
     },
     "airColor": {
       "value": -15263977,
@@ -79,7 +79,7 @@
       "value": "CUSTOM:DarkLeaves"
     },
     "treeVines": {
-      "value": ""
+      "value": "CUSTOM:SoulVines"
     },
     "treeFruits": {
       "value": ""

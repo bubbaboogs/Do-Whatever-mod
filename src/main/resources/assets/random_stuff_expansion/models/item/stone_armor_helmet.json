@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "random_stuff_expansion:items/stonearmor_head"
-  }
-}

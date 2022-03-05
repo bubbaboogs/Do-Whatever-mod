@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "random_stuff_expansion:mystic"
+    },
+    "1": {
+      "item": "random_stuff_expansion:mystic"
+    },
+    "2": {
+      "item": "random_stuff_expansion:mystic"
+    },
+    "3": {
+      "item": "random_stuff_expansion:mystic"
+    },
+    "5": {
+      "item": "random_stuff_expansion:mystic"
+    },
+    "6": {
+      "item": "random_stuff_expansion:mystic"
+    },
+    "8": {
+      "item": "random_stuff_expansion:mystic"
+    }
+  },
+  "result": {
+    "item": "random_stuff_expansion:mystical_armor_leggings",
+    "count": 1
+  }
+}

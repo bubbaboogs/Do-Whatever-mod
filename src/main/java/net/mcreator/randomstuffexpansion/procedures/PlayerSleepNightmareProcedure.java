@@ -40,7 +40,7 @@ public class PlayerSleepNightmareProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (Math.random() > 0.5) {
+		if (Math.random() >= 0.5) {
 			if (entity instanceof Player _playerHasItem
 					? _playerHasItem.getInventory().contains(new ItemStack(RandomStuffExpansionModItems.DREAM_CATCHER))
 					: false) {

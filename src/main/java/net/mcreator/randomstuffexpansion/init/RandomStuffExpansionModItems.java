@@ -14,13 +14,13 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.randomstuffexpansion.item.StoneArmorItem;
 import net.mcreator.randomstuffexpansion.item.SacrificialKnifeItem;
 import net.mcreator.randomstuffexpansion.item.MysticalSwordItem;
 import net.mcreator.randomstuffexpansion.item.MysticalShovelItem;
 import net.mcreator.randomstuffexpansion.item.MysticalPickaxeItem;
 import net.mcreator.randomstuffexpansion.item.MysticalHoeItem;
 import net.mcreator.randomstuffexpansion.item.MysticalAxeItem;
+import net.mcreator.randomstuffexpansion.item.MysticalArmorItem;
 import net.mcreator.randomstuffexpansion.item.MysticItem;
 import net.mcreator.randomstuffexpansion.item.ManaBerryItem;
 import net.mcreator.randomstuffexpansion.item.MagicItem;
@@ -37,10 +37,6 @@ public class RandomStuffExpansionModItems {
 	public static final Item MANA_BERRY = register(new ManaBerryItem());
 	public static final Item MAGIC = register(new MagicItem());
 	public static final Item MANA_BERRY_BUSH = register(RandomStuffExpansionModBlocks.MANA_BERRY_BUSH, CreativeModeTab.TAB_DECORATIONS);
-	public static final Item STONE_ARMOR_HELMET = register(new StoneArmorItem.Helmet());
-	public static final Item STONE_ARMOR_CHESTPLATE = register(new StoneArmorItem.Chestplate());
-	public static final Item STONE_ARMOR_LEGGINGS = register(new StoneArmorItem.Leggings());
-	public static final Item STONE_ARMOR_BOOTS = register(new StoneArmorItem.Boots());
 	public static final Item BLOOD_WAND = register(new BloodWandItem());
 	public static final Item DRIED_BLOOD = register(new DriedBloodItem());
 	public static final Item SACRIFICIAL_KNIFE = register(new SacrificialKnifeItem());
@@ -68,6 +64,10 @@ public class RandomStuffExpansionModItems {
 	public static final Item MYSTICAL_SHOVEL = register(new MysticalShovelItem());
 	public static final Item MYSTICAL_HOE = register(new MysticalHoeItem());
 	public static final Item SOUL_VINES = register(RandomStuffExpansionModBlocks.SOUL_VINES, CreativeModeTab.TAB_DECORATIONS);
+	public static final Item MYSTICAL_ARMOR_HELMET = register(new MysticalArmorItem.Helmet());
+	public static final Item MYSTICAL_ARMOR_CHESTPLATE = register(new MysticalArmorItem.Chestplate());
+	public static final Item MYSTICAL_ARMOR_LEGGINGS = register(new MysticalArmorItem.Leggings());
+	public static final Item MYSTICAL_ARMOR_BOOTS = register(new MysticalArmorItem.Boots());
 
 	private static Item register(Item item) {
 		REGISTRY.add(item);
