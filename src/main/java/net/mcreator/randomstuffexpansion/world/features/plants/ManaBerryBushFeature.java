@@ -24,7 +24,7 @@ public class ManaBerryBushFeature extends DefaultFlowerFeature {
 			.setRegistryName("random_stuff_expansion:mana_berry_bush");
 	public static final ConfiguredFeature<?, ?> CONFIGURED_FEATURE = FEATURE
 			.configured(new RandomPatchConfiguration.GrassConfigurationBuilder(
-					new SimpleStateProvider(RandomStuffExpansionModBlocks.MANA_BERRY_BUSH.defaultBlockState()), SimpleBlockPlacer.INSTANCE).tries(6)
+					new SimpleStateProvider(RandomStuffExpansionModBlocks.MANA_BERRY_BUSH.defaultBlockState()), SimpleBlockPlacer.INSTANCE).tries(64)
 
 							.build())
 			.decorated(FeatureDecorator.HEIGHTMAP.configured(new HeightmapConfiguration(Heightmap.Types.MOTION_BLOCKING))).squared().rarity(32)
